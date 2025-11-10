@@ -10,7 +10,7 @@
 - **Foco da avaliação**: configuração e integração dos serviços AWS.
 
 ## 🏗️ Arquitetura (Mermaid)
-```mermaid
+```
 flowchart LR
   Client[(Cliente / Navegador)]
   APIGW[API Gateway (HTTP API)]
