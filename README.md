@@ -33,16 +33,6 @@ flowchart LR
 | **RDS MySQL** | Banco de dados | Instância em subnet privada; SG do RDS permite `3306` **apenas** do SG da EC2 |
 | **Lambda `/report`** | Estatísticas | **Não** acessa RDS; consome `GET ${API_BASE}/movies` via Gateway e agrega |
 
-## 🔐 Variáveis de ambiente da API (exemplo `.env`)
-```
-MYSQL_HOST=tudo.cluster-custom-creuwgkcofr6.sa-east-1.rds.amazonaws.com
-MYSQL_PORT=3306
-MYSQL_USER=admin
-MYSQL_PASSWORD=123456789
-MYSQL_DATABASE=movies
-PORT=3000
-```
-
 > Em produção, **não** versone credenciais. Prefira **Secrets Manager** e roles IAM.
 
 ## 🚀 Passo a passo resumido de deploy
