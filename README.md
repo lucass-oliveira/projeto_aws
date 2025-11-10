@@ -110,6 +110,3 @@ curl.exe -sv "$API/health"
 ```
 
 ---
-
-### Créditos
-Projeto desenvolvido para trabalho acadêmico, por Lucas Matos.
